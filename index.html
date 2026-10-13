@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2M Sécurité : gardiennage, rondes de surveillance, contrôle d'accès et sécurité événementielle à Montpellier et dans l'Hérault.">
+<title>2M Sécurité Montpellier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one-page vitrine, header collant, hero en deux colonnes (promesse + main courante), puis bandes de contenu alternées */
+:root{
+  --bg:#F3F5F2; --surface:#FFFFFF; --ink:#11231F; --muted:#51625D; --line:#D6DDD9;
+  --uniform:#123B36; --uniform-ink:#EAF2EF; --signal:#E8A317; --signal-ink:#1B1406; --signal-soft:#FBEBC6;
+  --ok:#2E7D57;
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:6px; --wrap:1160px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0C1614; --surface:#13211E; --ink:#E4ECE9; --muted:#9AAEA8; --line:#26382F;
+  --uniform:#0F2E2A; --uniform-ink:#E4ECE9; --signal:#F0B23A; --signal-ink:#1B1406; --signal-soft:#3A2E12; --ok:#5CC08E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C1614; --surface:#13211E; --ink:#E4ECE9; --muted:#9AAEA8; --line:#26382F;
+  --uniform:#0F2E2A; --uniform-ink:#E4ECE9; --signal:#F0B23A; --signal-ink:#1B1406; --signal-soft:#3A2E12; --ok:#5CC08E; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display);line-height:1;margin:0;text-wrap:balance;letter-spacing:.005em}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;text-transform:uppercase}
+h3{font-size:1.5rem;font-weight:800;text-transform:uppercase}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lead{color:var(--muted);max-width:60ch;font-size:1.05rem}
+:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+/* Bandeau urgence + header */
+.topbar{background:var(--uniform);color:var(--uniform-ink);font-size:.85rem}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;padding-block:8px}
+.topbar b{color:var(--signal);font-family:var(--f-mono);font-weight:500}
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:44px;height:44px;flex:none}
+.logo-txt{font-family:var(--f-display);font-weight:900;font-size:1.6rem;line-height:.9;text-transform:uppercase}
+.logo-txt small{display:block;font-family:var(--f-mono);font-weight:400;font-size:.62rem;letter-spacing:.14em;color:var(--muted)}
+nav.main{display:flex;gap:22px;align-items:center}
+nav.main a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav.main a:hover{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.8em 1.3em;border-radius:var(--r);font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--f-body);font-size:1rem}
+.btn-signal{background:var(--signal);color:var(--signal-ink)}
+.btn-signal:hover{filter:brightness(1.06)}
+.btn-ghost{border-color:currentColor;background:transparent}
+.menu-btn{display:none;background:none;border:2px solid var(--line);border-radius:var(--r);padding:8px 10px;color:var(--ink);font-weight:700;cursor:pointer}
+@media (max-width:860px){
+  nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:12px 20px 20px;gap:4px}
+  nav.main.open{display:flex}
+  nav.main a{padding:10px 0;border-bottom:1px solid var(--line)}
+  nav.main .btn{margin-top:10px}
+  .menu-btn{display:inline-block}
+}
+
+/* Hero */
+.hero{background:var(--uniform);color:var(--uniform-ink);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:10px;background:repeating-linear-gradient(-45deg,var(--signal) 0 18px,var(--uniform) 18px 36px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,820px);gap:48px;align-items:center;padding-block:72px 84px}
+.hero h1{font-size:clamp(3rem,8vw,6.2rem);font-weight:900;text-transform:uppercase;line-height:.88}
+.hero h1 em{font-style:normal;color:var(--signal)}
+.hero .lead{color:var(--uniform-ink);opacity:.85;margin-top:22px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px;padding:0;list-style:none}
+.hero .facts li{font-family:var(--f-mono);font-size:.78rem;border:1px solid rgba(255,255,255,.25);padding:4px 10px;border-radius:99px}
+.logbook{background:var(--surface);color:var(--ink);border-radius:var(--r);box-shadow:0 24px 50px -20px rgba(0,0,0,.55);min-width:0;font-family:var(--f-mono);font-size:.85rem}
+.logbook header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:2px solid var(--ink)}
+.logbook header strong{font-family:var(--f-display);font-size:1.25rem;text-transform:uppercase}
+.logbook ol{list-style:none;margin:0;padding:6px 18px 14px}
+.logbook li{display:grid;grid-template-columns:52px 1fr auto;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);align-items:baseline}
+.logbook li:last-child{border-bottom:0}
+.logbook time{color:var(--muted)}
+.tag{font-size:.7rem;padding:2px 8px;border-radius:99px;background:var(--signal-soft);color:var(--ink);white-space:nowrap}
+.tag.ok{background:transparent;border:1px solid var(--ok);color:var(--ok)}
+.logbook footer{padding:10px 18px;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-block:48px 64px}}
+
+/* Sections */
+section.band{padding-block:88px}
+section.alt{background:var(--surface);border-block:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:end;margin-bottom:44px}
+.sec-head .eyebrow{grid-column:1/-1}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr}}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.svc{background:var(--surface);padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0}
+section.alt .svc{background:var(--bg)}
+.svc .ico{width:40px;height:40px;color:var(--uniform)}
+:root[data-theme="dark"] .svc .ico{color:var(--signal)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .svc .ico{color:var(--signal)}}
+.svc p{color:var(--muted)}
+.svc ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:.92rem}
+@media (max-width:900px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.services{grid-template-columns:1fr}}
+
+.sectors{display:flex;flex-wrap:wrap;gap:10px}
+.sector{display:flex;align-items:center;gap:10px;padding:14px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);font-weight:600}
+.sector span{font-family:var(--f-mono);font-size:.75rem;color:var(--muted);font-weight:400}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s;padding:0;margin:0;list-style:none}
+.steps li{border-top:4px solid var(--signal);padding-top:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.steps li::before{counter-increment:s;content:"Étape " counter(s);font-family:var(--f-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.steps p{color:var(--muted);font-size:.95rem}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+.commit{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px}
+.commit div{display:grid;grid-template-columns:28px 1fr;gap:12px}
+.commit svg{width:24px;height:24px;color:var(--ok);margin-top:2px}
+.commit p{color:var(--muted)}
+.commit strong{display:block;color:var(--ink)}
+@media (max-width:700px){.commit{grid-template-columns:1fr}}
+
+/* Devis */
+.quote{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+@media (max-width:900px){.quote{grid-template-columns:1fr}}
+.contact-list{display:flex;flex-direction:column;gap:16px;margin-top:28px}
+.contact-list div{display:flex;flex-direction:column;gap:2px;border-left:3px solid var(--signal);padding-left:14px}
+.contact-list .k{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.contact-list .v{font-weight:600;user-select:all}
+.todo{font-family:var(--f-mono);font-size:.7rem;background:var(--signal-soft);padding:1px 6px;border-radius:4px;font-weight:400;user-select:none}
+form.devis{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+section.alt form.devis{background:var(--bg)}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+label{font-size:.85rem;font-weight:600}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:var(--r);padding:.65em .8em;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--uniform);outline:none;box-shadow:0 0 0 3px var(--signal-soft)}
+textarea{min-height:110px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:99px;padding:6px 12px;font-weight:500;cursor:pointer}
+.chips input{width:auto;accent-color:var(--uniform)}
+.form-note{grid-column:1/-1;font-size:.8rem;color:var(--muted)}
+.result{grid-column:1/-1;border:2px solid var(--ok);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px}
+.result pre{margin:0;white-space:pre-wrap;font-family:var(--f-mono);font-size:.8rem;background:var(--bg);padding:12px;border-radius:4px;max-height:220px;overflow:auto}
+@media (max-width:560px){form.devis{grid-template-columns:1fr;padding:20px}}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;border-top:1px solid var(--line);max-width:860px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font-weight:700;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";font-family:var(--f-mono);color:var(--muted)}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--muted);margin-top:10px;max-width:68ch}
+
+/* Footer */
+footer.site{background:var(--uniform);color:var(--uniform-ink);padding-block:56px 32px;font-size:.88rem}
+footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+footer.site h4{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px;opacity:.7;font-weight:500}
+footer.site ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+footer.site a{text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+.legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;gap:8px;opacity:.8;font-size:.78rem}
+.legal .cnaps{font-family:var(--f-mono)}
+@media (max-width:760px){footer.site .cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>Gardiennage et surveillance à Montpellier et dans l'Hérault</span>
+  <span>Intervention 7 j/7 · <b>Tél. 04 00 00 00 00</b></span>
+</div></div>
+
+<header class="site"><div class="wrap">
+  <a class="logo" href="#top" aria-label="2M Sécurité, accueil">
+    <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true">
+      <path d="M22 2 L40 8 V22 C40 33 32 40 22 42 C12 40 4 33 4 22 V8 Z" fill="var(--uniform)"/>
+      <path d="M22 6 L36 10.6 V22 C36 30.8 29.8 36.4 22 38 Z" fill="var(--signal)"/>
+      <text x="13.5" y="27" font-family="Big Shoulders Display, Impact, sans-serif" font-weight="900" font-size="15" fill="var(--uniform-ink)">2M</text>
+    </svg>
+    <span class="logo-txt">2M Sécurité<small>Sécurité privée · 34</small></span>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+  <nav class="main" id="mainNav">
+    <a href="#services">Services</a>
+    <a href="#secteurs">Secteurs</a>
+    <a href="#methode">Méthode</a>
+    <a href="#faq">Questions</a>
+    <a class="btn btn-signal" href="#devis">Demander un devis</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow" style="color:var(--signal)">Agence de sécurité privée · Montpellier</p>
+    <h1 style="margin-top:14px">Vos sites gardés <em>de jour comme de nuit</em></h1>
+    <p class="lead">2M Sécurité met à votre disposition des agents de prévention et de sécurité qualifiés pour protéger vos locaux, vos chantiers, vos commerces et vos événements, partout dans l'Hérault.</p>
+    <div class="ctas">
+      <a class="btn btn-signal" href="#devis">Obtenir un devis sous 24 h</a>
+      <a class="btn btn-ghost" href="#services">Voir nos prestations</a>
+    </div>
+    <ul class="facts">
+      <li>Agents titulaires de la carte pro CNAPS</li>
+      <li>Convention IDCC 1351</li>
+      <li>Société créée en 2024</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="band" id="services"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">Nos prestations</p>
+    <h2>Une présence humaine, adaptée à votre site</h2>
+    <p class="lead">Chaque mission part d'une visite de votre site. Nous définissons ensemble les horaires, les consignes et le profil d'agent nécessaire.</p>
+  </div>
+  <div class="services">
+    <article class="svc">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+      <h3>Gardiennage</h3>
+      <p>Agent de prévention et de sécurité en poste fixe, de jour comme de nuit, pour protéger vos biens et vos locaux.</p>
+      <ul><li>Postes permanents ou ponctuels</li><li>Week-ends et jours fériés</li></ul>
+    </article>
+    <article class="svc">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <h3>Rondes de surveillance</h3>
+      <p>Passages réguliers sur votre site pour vérifier les accès, les clôtures et l'absence d'intrusion.</p>
+      <ul><li>Rondes de fermeture et d'ouverture</li><li>Compte rendu après chaque passage</li></ul>
+    </article>
+    <article class="svc">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      <h3>Contrôle d'accès</h3>
+      <p>Accueil, filtrage et vérification des entrées dans vos bâtiments, résidences et établissements recevant du public.</p>
+      <ul><li>Tenue du registre des visiteurs</li><li>Gestion des badges et des clés</li></ul>
+    </article>
+    <article class="svc">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/></svg>
+      <h3>Surveillance de chantier</h3>
+      <p>Protection des engins, des matériaux et des installations contre le vol et les dégradations, hors heures d'ouverture.</p>
+      <ul><li>Nuits, week-ends, congés</li><li>Contrôle des livraisons</li></ul>
+    </article>
+    <article class="svc">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l4-12 4 6 4-9 4 15"/></svg>
+      <h3>Sécurité événementielle</h3>
+      <p>Agents pour vos salons, concerts, soirées d'entreprise et manifestations publiques ou privées.</p>
+      <ul><li>Filtrage et palpation des entrées</li><li>Gestion des flux de public</li></ul>
+    </article>
+    <article class="svc">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>
+      <h3>Surveillance de magasin</h3>
+      <p>Prévention des vols et présence dissuasive en surface de vente, pour commerces et grandes surfaces.</p>
+      <ul><li>Agent en tenue ou en civil</li><li>Ouverture et fermeture du magasin</li></ul>
+    </article>
+  </div>
+</div></section>
+
+<section class="band alt" id="secteurs"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">Qui nous protégeons</p>
+    <h2>Entreprises, collectivités et particuliers</h2>
+    <p class="lead">Nos agents interviennent pour des structures privées comme publiques, à Montpellier et dans toute l'Hérault.</p>
+  </div>
+  <div class="sectors">
+    <div class="sector">Bureaux et entreprises <span>poste fixe</span></div>
+    <div class="sector">Commerces <span>prévention vol</span></div>
+    <div class="sector">Chantiers BTP <span>nuit · week-end</span></div>
+    <div class="sector">Entrepôts et logistique <span>rondes</span></div>
+    <div class="sector">Résidences et copropriétés <span>contrôle d'accès</span></div>
+    <div class="sector">Collectivités <span>bâtiments publics</span></div>
+    <div class="sector">Événements <span>filtrage</span></div>
+    <div class="sector">Établissements recevant du public <span>accueil</span></div>
+  </div>
+</div></section>
+
+<section class="band" id="methode"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">Comment ça se passe</p>
+    <h2>De la demande à la prise de poste</h2>
+    <p class="lead">Une démarche simple, avec un interlocuteur unique du premier appel jusqu'au suivi de la mission.</p>
+  </div>
+  <ol class="steps">
+    <li><h3>Analyse</h3><p>Nous visitons votre site et identifions les risques : accès, horaires, points sensibles.</p></li>
+    <li><h3>Proposition</h3><p>Vous recevez un devis détaillé : nombre d'agents, plages horaires, consignes et tarif.</p></li>
+    <li><h3>Mise en place</h3><p>Nous rédigeons les consignes de poste avec vous et présentons l'agent affecté au site.</p></li>
+    <li><h3>Suivi</h3><p>Main courante, rapports d'incident et point régulier avec votre référent.</p></li>
+  </ol>
+
+  <div style="margin-top:72px" class="commit">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Agents qualifiés et déclarés</strong>Chaque agent détient une carte professionnelle délivrée par le CNAPS, vérifiable sur demande.</p></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Réactivité</strong>Réponse à votre demande sous 24 h et remplacement rapide d'un agent absent.</p></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Transparence</strong>Comptes rendus écrits après chaque vacation, consultables par votre référent.</p></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Proximité</strong>Une entreprise montpelliéraine qui connaît le territoire et ses contraintes.</p></div>
+  </div>
+</div></section>
+
+<section class="band alt" id="devis"><div class="wrap">
+  <div class="quote">
+    <div>
+      <p class="eyebrow">Devis gratuit</p>
+      <h2 style="margin-top:12px">Parlez-nous de votre site</h2>
+      <p class="lead" style="margin-top:16px">Décrivez votre besoin en quelques lignes. Nous revenons vers vous sous 24 h avec une proposition adaptée.</p>
+      <div class="contact-list">
+        <div><span class="k">Téléphone</span><span class="v">04 00 00 00 00 <span class="todo">à compléter</span></span></div>
+        <div><span class="k">E-mail</span><span class="v">contact@2msecurite.fr <span class="todo">à compléter</span></span></div>
+        <div><span class="k">Siège</span><span class="v">Montpellier (34080)</span></div>
+        <div><span class="k">Zone d'intervention</span><span class="v">Montpellier, Hérault et Occitanie</span></div>
+      </div>
+    </div>
+
+    <form class="devis" id="devisForm" novalidate>
+      <div class="field"><label for="nom">Nom et prénom</label><input id="nom" name="nom" required autocomplete="name"></div>
+      <div class="field"><label for="societe">Société / structure</label><input id="societe" name="societe" autocomplete="organization"></div>
+      <div class="field"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required autocomplete="tel"></div>
+      <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="type">Type de site</label>
+        <select id="type" name="type">
+          <option>Bureaux / entreprise</option><option>Commerce</option><option>Chantier</option><option>Entrepôt</option>
+          <option>Résidence / copropriété</option><option>Événement</option><option>Collectivité</option><option>Autre</option>
+        </select></div>
+      <div class="field"><label for="ville">Ville du site</label><input id="ville" name="ville" placeholder="Montpellier"></div>
+      <div class="field full"><label>Prestations souhaitées</label>
+        <div class="chips">
+          <label><input type="checkbox" name="presta" value="Gardiennage" id="p1" checked> Gardiennage</label>
+          <label><input type="checkbox" name="presta" value="Rondes" id="p2"> Rondes</label>
+          <label><input type="checkbox" name="presta" value="Contrôle d'accès" id="p3"> Contrôle d'accès</label>
+          <label><input type="checkbox" name="presta" value="Événementiel" id="p4"> Événementiel</label>
+        </div></div>
+      <div class="field"><label for="debut">Date de début</label><input id="debut" name="debut" type="date"></div>
+      <div class="field"><label for="horaires">Horaires</label>
+        <select id="horaires" name="horaires"><option>Nuit</option><option>Jour</option><option>24 h/24</option><option>Week-end</option><option>Ponctuel</option></select></div>
+      <div class="field full"><label for="message">Votre besoin</label><textarea id="message" name="message" placeholder="Ex. : surveillance d'un chantier de 3 000 m² les nuits et week-ends pendant 4 mois."></textarea></div>
+      <p class="form-note">Les informations saisies servent uniquement à établir votre devis.</p>
+      <div class="field full"><button class="btn btn-signal" type="submit">Préparer ma demande de devis</button></div>
+      <div class="result" id="result" hidden>
+        <strong>Votre demande est prête.</strong>
+        <span style="color:var(--muted);font-size:.9rem">Copiez-la et envoyez-la à l'adresse e-mail ci-contre, ou appelez-nous en la gardant sous les yeux.</span>
+        <pre id="resultText"></pre>
+        <button class="btn btn-ghost" type="button" id="copyBtn">Copier la demande</button>
+      </div>
+    </form>
+  </div>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">Questions fréquentes</p>
+    <h2>Avant de nous confier votre site</h2>
+  </div>
+  <div class="faq">
+    <details><summary>Vos agents sont-ils habilités ?</summary><p>Oui. Tous nos agents de prévention et de sécurité détiennent une carte professionnelle délivrée par le CNAPS (Conseil national des activités privées de sécurité). Vous pouvez demander à la consulter avant le début de la mission.</p></details>
+    <details><summary>Dans quel délai pouvez-vous intervenir ?</summary><p>Nous répondons à chaque demande sous 24 h. Pour une mission urgente, appelez-nous directement : la mise en place peut être rapide selon la disponibilité des agents et la nature du site.</p></details>
+    <details><summary>Comment est calculé le tarif ?</summary><p>Le prix dépend du nombre d'heures, des plages horaires (nuit, dimanche, jours fériés), du nombre d'agents et des qualifications demandées. Le devis détaille chacun de ces éléments.</p></details>
+    <details><summary>Intervenez-vous en dehors de Montpellier ?</summary><p>Oui, dans tout le département de l'Hérault et en Occitanie. Pour les sites plus éloignés, contactez-nous pour étudier la faisabilité.</p></details>
+    <details><summary>Que contient le compte rendu ?</summary><p>L'agent tient une main courante pendant sa vacation : heures de prise et de fin de poste, rondes effectuées, anomalies constatées et actions menées. Un rapport d'incident est rédigé dès qu'un événement le justifie.</p></details>
+  </div>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div>
+      <span class="logo-txt" style="font-size:1.8rem">2M Sécurité</span>
+      <p style="margin-top:12px;opacity:.85;max-width:40ch">Gardiennage, surveillance et sécurité des biens et des personnes à Montpellier et dans l'Hérault.</p>
+    </div>
+    <div><h4>Prestations</h4><ul>
+      <li><a href="#services">Gardiennage</a></li><li><a href="#services">Rondes de surveillance</a></li>
+      <li><a href="#services">Contrôle d'accès</a></li><li><a href="#services">Sécurité événementielle</a></li></ul></div>
+    <div><h4>Contact</h4><ul>
+      <li>04 00 00 00 00</li><li>contact@2msecurite.fr</li><li>Montpellier (34080)</li>
+      <li><a href="#devis">Demander un devis</a></li></ul></div>
+  </div>
+  <div class="legal">
+    <span>2M SÉCURITÉ · SAS au capital de 100 € · RCS Montpellier 983 892 621 · SIRET 983 892 621 00019 · TVA FR79983892621 · NAF 80.10Z</span>
+    <span class="cnaps">Autorisation d'exercice CNAPS n° AUT-034-XXXX-XX-XX-XXXXXXXXXXX (à compléter)</span>
+    <span>« L'autorisation d'exercice délivrée par le CNAPS ne confère aucune prérogative de puissance publique à l'entreprise ou aux personnes qui en bénéficient. » (article L.612-14 du Code de la sécurité intérieure)</span>
+    <span>© 2026 2M Sécurité · Mentions légales · Politique de confidentialité</span>
+  </div>
+</div></footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
+
+  var form=document.getElementById('devisForm'),res=document.getElementById('result'),out=document.getElementById('resultText');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var req=['nom','tel','email'],ok=true;
+    req.forEach(function(id){var el=document.getElementById(id);if(!el.value.trim()){el.style.borderColor='var(--signal)';ok=false}else{el.style.borderColor=''}});
+    if(!ok){document.getElementById(req.find(function(id){return!document.getElementById(id).value.trim()})).focus();return}
+    var f=new FormData(form),p=f.getAll('presta').join(', ')||'À préciser';
+    out.textContent='Demande de devis – 2M Sécurité\n\nNom : '+f.get('nom')+'\nSociété : '+(f.get('societe')||'-')+'\nTéléphone : '+f.get('tel')+'\nE-mail : '+f.get('email')+'\nType de site : '+f.get('type')+'\nVille : '+(f.get('ville')||'-')+'\nPrestations : '+p+'\nDébut : '+(f.get('debut')||'À définir')+'\nHoraires : '+f.get('horaires')+'\n\nBesoin :\n'+(f.get('message')||'-');
+    res.hidden=false;res.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    var b=this;
+    function sel(){var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Texte sélectionné'}
+    try{navigator.clipboard.writeText(out.textContent).then(function(){b.textContent='Demande copiée'},sel)}catch(err){sel()}
+  });
+})();
+</script>
+</body>
+</html>
