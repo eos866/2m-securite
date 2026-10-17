@@ -2,406 +2,584 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="2M Sécurité : gardiennage, rondes de surveillance, contrôle d'accès et sécurité événementielle à Montpellier et dans l'Hérault.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="2M Sécurité : gardiennage, rondes de surveillance, contrôle d'accès et sécurité événementielle à Montpellier et dans l'Hérault. Devis gratuit sous 24 h.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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Hn34HC6rm80F5z+G0SmUgsi50PMC76ijuyx+cs45JymlcsW5/vfbUj5KI3UxIiomTLjhhSB2lcBleW0uF6OvELhIJp5yu+zalZW77loi8dilkohfKtPueUmamrJy8pduE/i5GHOFeHqKQF0+FlwlE8bf+LyIVHSe47O6PvOPpbZ/lE1EKo499ra7nl+044TWtpZIa2OMMiq0bQzet4y77zmLVKmHUj67mtJ89Yy7eOONHXheOWIjsSK2LFXufeHwigfnPPXts5RSrXV1oovd4f++Dmh/S/X1yomIPvXk2/+68LnG7+5obBGttBiDDqMIrSN+d9VxiDh+/vPHccTwvDjOWeecUl0qU6q2tvtND8w84wdKKft5GP+5OaBdY6ivrxfjIWedcd+Pnnp6w582bW7R4KxnPBPZqNhj7ANJPGOJrLPgmT59S9yxx/W66PbbvnK1sygR+dz2/Of6yexCoj5dwwxbd+njx8586O3bV67e1dPabORpMSilRHngRKyz1hjPGz40tXHipD7nXHHFl+dAnScyxf5bJryPc7V/KcLixW92P2bCjY916XK1wBRRXGYVUyzUS5eq38uxx0197PVXX+9WjKH/W1+kMHnydAMQTxjOPff+C4YO/nOj0b8VrafI4MF/3H7u96ddkEh4u439P3cVjuEK2OOJh1YOH3PUjc+MO/qvzz7xxOr92nHJ5/2FCe+//h851l4EyRd1RgAAAABJRU5ErkJggg==">
 <title>2M Sécurité Montpellier</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap">
 <style>
-/* Layout: one-page vitrine, header collant, hero en deux colonnes (promesse + main courante), puis bandes de contenu alternées */
+/* Layout : charte du logo (bleu marine + bleu pervenche + triangles et pans diagonaux), site vitrine une page, hero marine avec formulaire express, sections blanches et bleu brume en alternance */
 :root{
-  --bg:#F3F5F2; --surface:#FFFFFF; --ink:#11231F; --muted:#51625D; --line:#D6DDD9;
-  --uniform:#123B36; --uniform-ink:#EAF2EF; --signal:#E8A317; --signal-ink:#1B1406; --signal-soft:#FBEBC6;
-  --ok:#2E7D57;
-  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
-  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
-  --r:6px; --wrap:1160px;
+  --navy:#01017F; --navy-deep:#00005C; --navy-ink:#0B0D3A;
+  --blue:#6590EA; --blue-strong:#3F6FD8; --blue-soft:#E9EFFD; --mist:#E7EAF3;
+  --bg:#FFFFFF; --bg-alt:#F5F7FC; --ink:#0D1030; --muted:#545A7A; --line:#DDE2EF;
+  --on-navy:#FFFFFF; --on-navy-muted:#C3CCF2;
+  --f-display:"Montserrat","Segoe UI",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  --r:14px; --r-sm:10px; --wrap:1200px;
+  --shadow:0 18px 40px -18px rgba(1,1,127,.28);
+  color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0C1614; --surface:#13211E; --ink:#E4ECE9; --muted:#9AAEA8; --line:#26382F;
-  --uniform:#0F2E2A; --uniform-ink:#E4ECE9; --signal:#F0B23A; --signal-ink:#1B1406; --signal-soft:#3A2E12; --ok:#5CC08E; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0C1614; --surface:#13211E; --ink:#E4ECE9; --muted:#9AAEA8; --line:#26382F;
-  --uniform:#0F2E2A; --uniform-ink:#E4ECE9; --signal:#F0B23A; --signal-ink:#1B1406; --signal-soft:#3A2E12; --ok:#5CC08E; color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6}
-.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-h1,h2,h3{font-family:var(--f-display);line-height:1;margin:0;text-wrap:balance;letter-spacing:.005em}
-h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;text-transform:uppercase}
-h3{font-size:1.5rem;font-weight:800;text-transform:uppercase}
+h1,h2,h3,h4{font-family:var(--f-display);margin:0;line-height:1.15;text-wrap:balance;letter-spacing:-.01em}
 p{margin:0}
-.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.lead{color:var(--muted);max-width:60ch;font-size:1.05rem}
-:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:20px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-/* Bandeau urgence + header */
-.topbar{background:var(--uniform);color:var(--uniform-ink);font-size:.85rem}
-.topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;padding-block:8px}
-.topbar b{color:var(--signal);font-family:var(--f-mono);font-weight:500}
-header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-mark{width:44px;height:44px;flex:none}
-.logo-txt{font-family:var(--f-display);font-weight:900;font-size:1.6rem;line-height:.9;text-transform:uppercase}
-.logo-txt small{display:block;font-family:var(--f-mono);font-weight:400;font-size:.62rem;letter-spacing:.14em;color:var(--muted)}
-nav.main{display:flex;gap:22px;align-items:center}
-nav.main a{text-decoration:none;font-weight:600;font-size:.95rem}
-nav.main a:hover{color:var(--muted)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:.8em 1.3em;border-radius:var(--r);font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:var(--f-body);font-size:1rem}
-.btn-signal{background:var(--signal);color:var(--signal-ink)}
-.btn-signal:hover{filter:brightness(1.06)}
-.btn-ghost{border-color:currentColor;background:transparent}
-.menu-btn{display:none;background:none;border:2px solid var(--line);border-radius:var(--r);padding:8px 10px;color:var(--ink);font-weight:700;cursor:pointer}
-@media (max-width:860px){
-  nav.main{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:12px 20px 20px;gap:4px}
+.eyebrow{font-family:var(--f-display);font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-strong);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:9px solid currentColor}
+h2.title{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:800;color:var(--navy-ink)}
+.lead{color:var(--muted);font-size:1.08rem;max-width:62ch}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-display);font-weight:700;font-size:.95rem;padding:15px 24px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--blue);color:var(--navy-deep)}
+.btn-primary:hover{background:#7AA0EE;transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(101,144,234,.9)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-deep);transform:translateY(-1px)}
+.btn-line{border-color:rgba(255,255,255,.45);color:#fff;background:transparent}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* Barre haute */
+.topbar{background:var(--navy-deep);color:var(--on-navy-muted);font-size:.86rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:8px 24px;flex-wrap:wrap;padding-block:8px}
+.topbar span{display:inline-flex;align-items:center;gap:8px}
+.topbar svg{width:15px;height:15px;color:var(--blue)}
+.topbar b{color:#fff;font-weight:600}
+@media (max-width:720px){.topbar .hide-sm{display:none}}
+
+/* En-tête */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:24px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brand img{width:46px;height:auto}
+.brand b{font-family:var(--f-display);font-weight:800;font-size:1.15rem;color:var(--navy);line-height:1.05}
+.brand small{display:block;font-family:var(--f-body);font-weight:500;font-size:.74rem;color:var(--muted);letter-spacing:.02em}
+nav.main{display:flex;align-items:center;gap:28px}
+nav.main a{text-decoration:none;font-family:var(--f-display);font-weight:600;font-size:.92rem;color:var(--navy-ink);position:relative;padding-block:6px}
+nav.main a.btn{color:#fff;padding:11px 20px}
+nav.main a:not(.btn)::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--blue);transition:right .2s ease}
+nav.main a:not(.btn):hover::after{right:0}
+.head-call{display:flex;align-items:center;gap:10px;text-decoration:none}
+.head-call .ic{width:40px;height:40px;border-radius:50%;background:var(--blue-soft);display:grid;place-items:center;color:var(--navy)}
+.head-call .ic svg{width:18px;height:18px}
+.head-call small{display:block;font-size:.74rem;color:var(--muted)}
+.head-call b{font-family:var(--f-display);font-size:.98rem;color:var(--navy)}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--navy);cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+@media (max-width:1080px){.head-call{display:none}}
+@media (max-width:900px){
+  .burger{display:inline-flex}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px;box-shadow:var(--shadow);display:none}
   nav.main.open{display:flex}
-  nav.main a{padding:10px 0;border-bottom:1px solid var(--line)}
-  nav.main .btn{margin-top:10px}
-  .menu-btn{display:inline-block}
+  nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}
+  nav.main a:not(.btn)::after{display:none}
+  nav.main .btn{margin-top:14px;border-bottom:0}
 }
 
 /* Hero */
-.hero{background:var(--uniform);color:var(--uniform-ink);position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:10px;background:repeating-linear-gradient(-45deg,var(--signal) 0 18px,var(--uniform) 18px 36px)}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,820px);gap:48px;align-items:center;padding-block:72px 84px}
-.hero h1{font-size:clamp(3rem,8vw,6.2rem);font-weight:900;text-transform:uppercase;line-height:.88}
-.hero h1 em{font-style:normal;color:var(--signal)}
-.hero .lead{color:var(--uniform-ink);opacity:.85;margin-top:22px}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px;padding:0;list-style:none}
-.hero .facts li{font-family:var(--f-mono);font-size:.78rem;border:1px solid rgba(255,255,255,.25);padding:4px 10px;border-radius:99px}
-.logbook{background:var(--surface);color:var(--ink);border-radius:var(--r);box-shadow:0 24px 50px -20px rgba(0,0,0,.55);min-width:0;font-family:var(--f-mono);font-size:.85rem}
-.logbook header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:2px solid var(--ink)}
-.logbook header strong{font-family:var(--f-display);font-size:1.25rem;text-transform:uppercase}
-.logbook ol{list-style:none;margin:0;padding:6px 18px 14px}
-.logbook li{display:grid;grid-template-columns:52px 1fr auto;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);align-items:baseline}
-.logbook li:last-child{border-bottom:0}
-.logbook time{color:var(--muted)}
-.tag{font-size:.7rem;padding:2px 8px;border-radius:99px;background:var(--signal-soft);color:var(--ink);white-space:nowrap}
-.tag.ok{background:transparent;border:1px solid var(--ok);color:var(--ok)}
-.logbook footer{padding:10px 18px;border-top:1px solid var(--line);color:var(--muted);font-size:.72rem}
-@media (max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-block:48px 64px}}
+.hero{position:relative;background:var(--navy);color:var(--on-navy);overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0 0 0 auto;width:42%;background:var(--blue);clip-path:polygon(38% 0,100% 0,100% 100%,0 100%);opacity:.95;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0 0 0 auto;width:42%;background:var(--navy);clip-path:polygon(38% 0,52% 0,14% 100%,0 100%);z-index:-1}
+.tri{position:absolute;width:0;height:0;z-index:-1;pointer-events:none}
+.tri.t1{left:44%;top:60px;border-left:46px solid transparent;border-right:46px solid transparent;border-top:76px solid rgba(255,255,255,.08)}
+.tri.t2{left:49%;top:118px;border-left:26px solid transparent;border-right:26px solid transparent;border-bottom:42px solid rgba(255,255,255,.08)}
+.tri.t3{left:6%;bottom:40px;border-left:34px solid transparent;border-right:34px solid transparent;border-top:56px solid rgba(101,144,234,.22)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center;padding-block:88px 96px}
+.hero .eyebrow{color:var(--blue)}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4.1rem);font-weight:800;margin-top:18px;letter-spacing:-.02em}
+.hero h1 span{color:var(--blue)}
+.hero .lead{color:var(--on-navy-muted);margin-top:22px;font-size:1.15rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero .checks{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;padding:0;list-style:none;font-weight:500}
+.hero .checks li{display:flex;align-items:center;gap:8px}
+.hero .checks svg{width:20px;height:20px;color:var(--blue);flex:none}
+
+.quick{background:#fff;color:var(--ink);border-radius:20px;padding:28px;box-shadow:0 30px 60px -24px rgba(0,0,40,.6);position:relative;min-width:0}
+.quick-head{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.quick-head img{width:52px;height:auto}
+.quick-head h2{font-size:1.25rem;font-weight:800;color:var(--navy-ink)}
+.quick-head p{font-size:.9rem;color:var(--muted)}
+.quick form{display:flex;flex-direction:column;gap:14px}
+.quick .btn{width:100%}
+.quick .note{font-size:.82rem;color:var(--muted);text-align:center}
+@media (max-width:960px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:64px 72px;gap:40px}
+  .hero::before{width:100%;height:38%;inset:auto 0 0 0;clip-path:polygon(0 40%,100% 0,100% 100%,0 100%)}
+  .hero::after{display:none}
+  .tri.t1,.tri.t2{left:auto;right:8%}
+}
+
+/* Champs */
+label.lbl{font-family:var(--f-display);font-weight:600;font-size:.82rem;color:var(--navy-ink);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg-alt);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;transition:border-color .15s,box-shadow .15s,background .15s}
+input:hover,select:hover,textarea:hover{border-color:#C7CFE6}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px var(--blue-soft)}
+input.err{border-color:#C8323C;box-shadow:0 0 0 4px #FBE6E8}
+textarea{min-height:120px;resize:vertical}
+
+/* Bandeau de confiance */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.trust-item{display:flex;align-items:center;gap:14px;padding:28px 20px;border-right:1px solid var(--line)}
+.trust-item:last-child{border-right:0}
+.trust-item .ic{width:48px;height:48px;border-radius:14px;background:var(--blue-soft);color:var(--navy);display:grid;place-items:center;flex:none}
+.trust-item svg{width:24px;height:24px}
+.trust-item b{display:block;font-family:var(--f-display);font-size:.98rem;color:var(--navy-ink)}
+.trust-item span{font-size:.9rem;color:var(--muted)}
+@media (max-width:960px){.trust .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media (max-width:520px){.trust .wrap{grid-template-columns:1fr}.trust-item{border-right:0;border-bottom:1px solid var(--line);padding:18px 4px}.trust-item:last-child{border-bottom:0}}
 
 /* Sections */
-section.band{padding-block:88px}
-section.alt{background:var(--surface);border-block:1px solid var(--line)}
-.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:end;margin-bottom:44px}
-.sec-head .eyebrow{grid-column:1/-1}
-@media (max-width:760px){.sec-head{grid-template-columns:1fr}}
+section.sec{padding-block:96px}
+section.alt{background:var(--bg-alt)}
+.sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:48px;max-width:760px}
+.sec-head.center{margin-inline:auto;text-align:center;align-items:center}
+@media (max-width:640px){section.sec{padding-block:68px}}
 
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
-.svc{background:var(--surface);padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0}
-section.alt .svc{background:var(--bg)}
-.svc .ico{width:40px;height:40px;color:var(--uniform)}
-:root[data-theme="dark"] .svc .ico{color:var(--signal)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .svc .ico{color:var(--signal)}}
+/* Services */
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;display:flex;flex-direction:column;gap:14px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;right:-1px;top:-1px;width:0;height:0;border-top:56px solid var(--blue-soft);border-left:56px solid transparent;transition:border-top-color .2s}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.svc:hover::after{border-top-color:var(--blue)}
+.svc .ic{width:56px;height:56px;border-radius:16px;background:var(--navy);color:#fff;display:grid;place-items:center}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-size:1.2rem;font-weight:700;color:var(--navy-ink)}
 .svc p{color:var(--muted)}
-.svc ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:.92rem}
-@media (max-width:900px){.services{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.services{grid-template-columns:1fr}}
+.svc ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
+.svc li{display:flex;gap:8px;align-items:flex-start}
+.svc li::before{content:"";flex:none;margin-top:9px;width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:7px solid var(--blue)}
+.svc .more{margin-top:auto;padding-top:8px;font-family:var(--f-display);font-weight:700;font-size:.9rem;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.svc .more svg{width:16px;height:16px;transition:transform .2s}
+.svc .more:hover svg{transform:translateX(4px)}
+@media (max-width:980px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.services{grid-template-columns:1fr}}
 
-.sectors{display:flex;flex-wrap:wrap;gap:10px}
-.sector{display:flex;align-items:center;gap:10px;padding:14px 20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);font-weight:600}
-.sector span{font-family:var(--f-mono);font-size:.75rem;color:var(--muted);font-weight:400}
+/* Bandeau urgence */
+.urgent{position:relative;background:var(--blue);color:var(--navy-deep);overflow:hidden;isolation:isolate}
+.urgent::before{content:"";position:absolute;inset:0 auto 0 0;width:34%;background:var(--navy);clip-path:polygon(0 0,100% 0,72% 100%,0 100%);z-index:-1}
+.urgent .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px 40px;flex-wrap:wrap;padding-block:44px}
+.urgent .shield{display:flex;align-items:center;gap:18px;color:#fff}
+.urgent .shield img{width:64px;height:auto;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
+.urgent h2{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800;color:var(--navy-deep)}
+.urgent p{font-weight:500;margin-top:4px}
+.urgent .txt{flex:1;min-width:240px}
+@media (max-width:760px){.urgent::before{width:100%;height:34%;clip-path:polygon(0 0,100% 0,100% 60%,0 100%)}.urgent .wrap{padding-top:28px}.urgent .shield{display:none}}
 
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s;padding:0;margin:0;list-style:none}
-.steps li{border-top:4px solid var(--signal);padding-top:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.steps li::before{counter-increment:s;content:"Étape " counter(s);font-family:var(--f-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.steps p{color:var(--muted);font-size:.95rem}
-@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.steps{grid-template-columns:1fr}}
+/* Secteurs */
+.sectors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.sector{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px 22px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,box-shadow .2s}
+.sector:hover{border-color:var(--blue);box-shadow:0 10px 26px -18px rgba(1,1,127,.5)}
+.sector svg{width:30px;height:30px;color:var(--blue-strong)}
+.sector b{font-family:var(--f-display);font-size:1rem;color:var(--navy-ink)}
+.sector span{font-size:.9rem;color:var(--muted)}
+@media (max-width:980px){.sectors{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.sectors{grid-template-columns:1fr}}
 
-.commit{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px}
-.commit div{display:grid;grid-template-columns:28px 1fr;gap:12px}
-.commit svg{width:24px;height:24px;color:var(--ok);margin-top:2px}
-.commit p{color:var(--muted)}
-.commit strong{display:block;color:var(--ink)}
-@media (max-width:700px){.commit{grid-template-columns:1fr}}
+/* Pourquoi / méthode */
+.why{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.why-list{display:flex;flex-direction:column;gap:22px;margin-top:34px}
+.why-item{display:grid;grid-template-columns:48px 1fr;gap:16px}
+.why-item .ic{width:48px;height:48px;border-radius:50%;background:var(--blue-soft);color:var(--navy);display:grid;place-items:center}
+.why-item svg{width:22px;height:22px}
+.why-item b{font-family:var(--f-display);font-size:1.02rem;color:var(--navy-ink);display:block;margin-bottom:2px}
+.why-item p{color:var(--muted)}
+.process{background:var(--navy);color:#fff;border-radius:22px;padding:40px 36px;position:relative;overflow:hidden;isolation:isolate}
+.process::before{content:"";position:absolute;right:-60px;top:-40px;width:220px;height:220px;background:var(--blue);clip-path:polygon(50% 100%,0 0,100% 0);opacity:.18;z-index:-1}
+.process h3{font-size:1.45rem;font-weight:800}
+.process>p{color:var(--on-navy-muted);margin-top:8px}
+.steps{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-direction:column;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:16px;position:relative;padding-bottom:26px}
+.steps li:last-child{padding-bottom:0}
+.steps li::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--blue);color:var(--navy-deep);font-family:var(--f-display);font-weight:800;display:grid;place-items:center;font-size:1.05rem}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:21px;top:48px;bottom:4px;width:2px;background:rgba(255,255,255,.18)}
+.steps b{font-family:var(--f-display);font-size:1.05rem;display:block;margin-top:9px}
+.steps p{color:var(--on-navy-muted);font-size:.96rem;margin-top:4px}
+@media (max-width:960px){.why{grid-template-columns:1fr;gap:40px}}
+@media (max-width:480px){.process{padding:30px 22px}}
 
 /* Devis */
-.quote{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
-@media (max-width:900px){.quote{grid-template-columns:1fr}}
-.contact-list{display:flex;flex-direction:column;gap:16px;margin-top:28px}
-.contact-list div{display:flex;flex-direction:column;gap:2px;border-left:3px solid var(--signal);padding-left:14px}
-.contact-list .k{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.contact-list .v{font-weight:600;user-select:all}
-.todo{font-family:var(--f-mono);font-size:.7rem;background:var(--signal-soft);padding:1px 6px;border-radius:4px;font-weight:400;user-select:none}
-form.devis{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
-section.alt form.devis{background:var(--bg)}
-.field{display:flex;flex-direction:column;gap:6px;min-width:0}
-.field.full{grid-column:1/-1}
-label{font-size:.85rem;font-weight:600}
-input,select,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:var(--r);padding:.65em .8em;width:100%}
-input:focus,select:focus,textarea:focus{border-color:var(--uniform);outline:none;box-shadow:0 0 0 3px var(--signal-soft)}
-textarea{min-height:110px;resize:vertical}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips label{display:flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:99px;padding:6px 12px;font-weight:500;cursor:pointer}
-.chips input{width:auto;accent-color:var(--uniform)}
-.form-note{grid-column:1/-1;font-size:.8rem;color:var(--muted)}
-.result{grid-column:1/-1;border:2px solid var(--ok);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px}
-.result pre{margin:0;white-space:pre-wrap;font-family:var(--f-mono);font-size:.8rem;background:var(--bg);padding:12px;border-radius:4px;max-height:220px;overflow:auto}
-@media (max-width:560px){form.devis{grid-template-columns:1fr;padding:20px}}
+.quote{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:start}
+.contact-cards{display:flex;flex-direction:column;gap:14px;margin-top:32px}
+.ccard{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.ccard .ic{width:46px;height:46px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;flex:none}
+.ccard svg{width:22px;height:22px}
+.ccard small{display:block;font-size:.8rem;color:var(--muted)}
+.ccard b{font-family:var(--f-display);color:var(--navy-ink);font-size:1rem;user-select:all;word-break:break-word}
+.todo{font-family:var(--f-body);font-size:.72rem;font-weight:600;background:#FFF1CC;color:#6B4A00;padding:2px 8px;border-radius:99px;margin-left:6px;user-select:none;white-space:nowrap}
+form.devis{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.full{grid-column:1/-1}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg-alt);font-weight:600;font-size:.92rem;cursor:pointer;transition:all .15s}
+.chip input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--blue);outline-offset:2px}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.form-foot p{font-size:.85rem;color:var(--muted);max-width:40ch}
+.err-msg{color:#B3202B;font-size:.9rem;font-weight:600}
+.result{border:2px solid var(--blue);background:var(--blue-soft);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:12px}
+.result b{font-family:var(--f-display);color:var(--navy-ink)}
+.result pre{margin:0;white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem;background:#fff;border-radius:10px;padding:14px;max-height:240px;overflow:auto;color:var(--ink)}
+.result .row{display:flex;gap:10px;flex-wrap:wrap}
+@media (max-width:960px){.quote{grid-template-columns:1fr}}
+@media (max-width:560px){form.devis{grid-template-columns:1fr;padding:22px}}
 
 /* FAQ */
-.faq{display:flex;flex-direction:column;border-top:1px solid var(--line);max-width:860px}
-.faq details{border-bottom:1px solid var(--line);padding:18px 0}
-.faq summary{cursor:pointer;font-weight:700;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
-.faq summary::after{content:"+";font-family:var(--f-mono);color:var(--muted)}
-.faq details[open] summary::after{content:"–"}
-.faq p{color:var(--muted);margin-top:10px;max-width:68ch}
+.faq-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:48px;align-items:start}
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:0 22px;transition:border-color .2s}
+.faq details[open]{border-color:var(--blue)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-family:var(--f-display);font-weight:700;font-size:1rem;color:var(--navy-ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--blue-soft);display:grid;place-items:center;transition:transform .2s,background .2s}
+.faq summary i svg{width:16px;height:16px;color:var(--navy)}
+.faq details[open] summary i{transform:rotate(45deg);background:var(--blue)}
+.faq details p{color:var(--muted);padding-bottom:20px;max-width:68ch}
+@media (max-width:900px){.faq-grid{grid-template-columns:1fr;gap:28px}}
 
-/* Footer */
-footer.site{background:var(--uniform);color:var(--uniform-ink);padding-block:56px 32px;font-size:.88rem}
-footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
-footer.site h4{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 12px;opacity:.7;font-weight:500}
-footer.site ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+/* Pied de page */
+footer.site{background:var(--navy-deep);color:var(--on-navy-muted);position:relative;overflow:hidden;isolation:isolate}
+footer.site::before{content:"";position:absolute;right:0;top:0;width:30%;height:100%;background:var(--navy);clip-path:polygon(40% 0,100% 0,100% 100%,0 100%);z-index:-1}
+footer.site .wrap{padding-block:64px 28px}
+.fcols{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:36px}
+.fbrand{display:flex;flex-direction:column;gap:16px}
+.fbrand img{width:84px;height:auto}
+.fbrand p{max-width:36ch}
+footer.site h4{font-family:var(--f-display);color:#fff;font-size:.95rem;margin-bottom:16px}
+footer.site ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:.95rem}
 footer.site a{text-decoration:none}
-footer.site a:hover{text-decoration:underline}
-.legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;gap:8px;opacity:.8;font-size:.78rem}
-.legal .cnaps{font-family:var(--f-mono)}
-@media (max-width:760px){footer.site .cols{grid-template-columns:1fr}}
+footer.site a:hover{color:#fff}
+.legal{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:8px;font-size:.82rem;color:#9CA6DB}
+@media (max-width:900px){.fcols{grid-template-columns:repeat(2,minmax(0,1fr))}.fbrand{grid-column:1/-1}}
+@media (max-width:480px){.fcols{grid-template-columns:1fr}}
+
+/* Barre d'action mobile */
+.mbar{display:none}
+@media (max-width:720px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px -20px rgba(1,1,127,.5)}
+  .mbar .btn{padding:13px 12px;font-size:.9rem}
+  body{padding-bottom:76px}
+}
 </style>
 </head>
 <body>
 
+
 <div class="topbar"><div class="wrap">
-  <span>Gardiennage et surveillance à Montpellier et dans l'Hérault</span>
-  <span>Intervention 7 j/7 · <b>Tél. 04 00 00 00 00</b></span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Montpellier · Hérault · Occitanie</span>
+  <span class="hide-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Agents disponibles <b>24 h/24, 7 j/7</b></span>
+  <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>contact@2msecurite.fr</span>
 </div></div>
 
 <header class="site"><div class="wrap">
-  <a class="logo" href="#top" aria-label="2M Sécurité, accueil">
-    <svg class="logo-mark" viewBox="0 0 44 44" aria-hidden="true">
-      <path d="M22 2 L40 8 V22 C40 33 32 40 22 42 C12 40 4 33 4 22 V8 Z" fill="var(--uniform)"/>
-      <path d="M22 6 L36 10.6 V22 C36 30.8 29.8 36.4 22 38 Z" fill="var(--signal)"/>
-      <text x="13.5" y="27" font-family="Big Shoulders Display, Impact, sans-serif" font-weight="900" font-size="15" fill="var(--uniform-ink)">2M</text>
-    </svg>
-    <span class="logo-txt">2M Sécurité<small>Sécurité privée · 34</small></span>
+  <a class="brand" href="#accueil" aria-label="2M Sécurité, retour à l'accueil">
+    <img src="data:image/png;base64,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" alt="Logo 2M Sécurité" width="46" height="49">
+    <span><b>2M Sécurité</b><small>Gardiennage &amp; surveillance</small></span>
   </a>
-  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
-  <nav class="main" id="mainNav">
-    <a href="#services">Services</a>
+  <nav class="main" id="nav" aria-label="Navigation principale">
+    <a href="#services">Prestations</a>
     <a href="#secteurs">Secteurs</a>
-    <a href="#methode">Méthode</a>
-    <a href="#faq">Questions</a>
-    <a class="btn btn-signal" href="#devis">Demander un devis</a>
+    <a href="#methode">Notre méthode</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-navy" href="#devis">Devis gratuit</a>
   </nav>
+  <a class="head-call" href="tel:+33400000000">
+    <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+    <span><small>Une urgence ?</small><b>04 00 00 00 00</b></span>
+  </a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
 </div></header>
 
-<main id="top">
-<section class="hero"><div class="wrap">
-  <div>
-    <p class="eyebrow" style="color:var(--signal)">Agence de sécurité privée · Montpellier</p>
-    <h1 style="margin-top:14px">Vos sites gardés <em>de jour comme de nuit</em></h1>
-    <p class="lead">2M Sécurité met à votre disposition des agents de prévention et de sécurité qualifiés pour protéger vos locaux, vos chantiers, vos commerces et vos événements, partout dans l'Hérault.</p>
-    <div class="ctas">
-      <a class="btn btn-signal" href="#devis">Obtenir un devis sous 24 h</a>
-      <a class="btn btn-ghost" href="#services">Voir nos prestations</a>
+<main id="accueil">
+<section class="hero">
+  <i class="tri t1"></i><i class="tri t2"></i><i class="tri t3"></i>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Agence de sécurité privée à Montpellier</span>
+      <h1>Votre sécurité, <span>notre engagement</span> jour et nuit</h1>
+      <p class="lead">Gardiennage, rondes, contrôle d'accès et sécurité événementielle. 2M Sécurité met à votre disposition des agents qualifiés pour protéger vos locaux, vos chantiers et vos équipes dans tout l'Hérault.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#devis">Demander un devis gratuit
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="tel:+33400000000">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>04 00 00 00 00</a>
+      </div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Agents carte pro CNAPS</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Réponse sous 24 h</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Entreprise locale</li>
+      </ul>
     </div>
-    <ul class="facts">
-      <li>Agents titulaires de la carte pro CNAPS</li>
-      <li>Convention IDCC 1351</li>
-      <li>Société créée en 2024</li>
-    </ul>
+
+    <aside class="quick" aria-labelledby="quickTitle">
+      <div class="quick-head">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAEACAMAAAC6bgsNAAAAkFBMVEUAAAADAoEEBHlklOry9PqcqNxfX6b4+v6uyPBSbc+io+DKz/Okpdi2y+mHh7mb0NWwst+vr6+2zfR9ffgAAP9BPZBsbLE7Q5YAAH/CvuN/f3+Afbd9gbnD0PYA//+CfcONjLt0ubn//6p///+/f79GRHd/tOmscuUAf39/AH9BPn+q/6r/AP//qv/AvvbBveH8AYGYAAAAMHRSTlMA/v7+/vz+CPj+BFGkev0FdQOgAgH+BP8C/wL8/I4B/JgDAwIE/wUEAgL/AwEDeoj+S5seAAAYJUlEQVR42u2dC2PrKK6AjRqBk7hu0kd6Ts9zZufu3vf9///u2oCNBDJ2ajd1ssucaZs0Sf1ZQgghRFFctpnm3x5Ra/0dcW/sE7fcGrx9Q6sAQCmtcV8Uz7fMu/vLVNuW1jelK7O7YRnvCoONdJVt7TcAjeZ2tfqPwlROmS0wtP+D/n2zxLu2+4LqgDvNbrS6eLtZfYYYuPnWEh9v0T7v0atxBGz78e7WeB863gDsu3P7tRmeboz4ZHm9WFVo3fDUEJ9uyHTtvhT7upOvAw622hnr1gXZ3ZC5qrQF472Xjsdq25iu2/BBWvFyXt46uVs/8/qttWnEe9g6VlDhKwe2xK/YCPnKkRvc4t6JV1GXkgF3fdoLeXe1yOZ4auZGdrKgFDPOvguDUtEwpepq3/aC6+vLxliTu6++6869gHgwSmXe9uTvDvlozDXBWlpz+K11N9AqYfAVHlvjVd1b2J1ZO3Rzgc/H3cn9uK9Qv4LtmjFwq7s2CODHYeDEzS+x2nvY3fF5rdzmr557/wMdbcrqeXGzwV7VIdV3rREPgfRoVmihrITNvpGsj+HITqTznTebjlgy3T4aon81kt4by7025DYaV2Gtm0aMUgrhe+nGNtTMQicvb7+3n4h2gF4V8bF1HjWJVSk+I2KPO15PDCIwd0H1t2pVM0gXy0h1WEl6rTekhXdB7IqwQJD1SY7r4b1HcZqrBHGjl60u7Q81MC+EqbMCZuf2b/+zkv77xaACZpqAhepSdW71gfwYATviaCLZzCDN29tKOnAbm+O8gp9B1BlfIAh7o5O7pJjv3WmMrtah1E0HZrE50fI4XE9Yd7EtYq0j50P8HG2Kh1UAVxoEM8s6p11Z2TAdduE7/5QKz4laYn+l0axAxKYwCDIw9yUx5iXE4dkcMNRriNm3Q1ISzoinBj3uRrNhiIxSAVkNtVanzTo0Ou7CXEEDbj9aEz8z/mUe+HkFwAc9OEnw8wAmRK600f1Qw8gAawGutgNdzsF0NGWtYMDJfg3IHbNoA1cCbPtw5Gh52da927ypNQz7y6Dr/oXtFKRXeB7aXUUfNm/md7xkpNq5XY1fKQRk9b5FDjenfb3yd5FOIdexlnxqO7HiogjdknbNjEGS3pQA64NZw4zpaNy4JEwRfK/szVPGAquoxzdvVBADr2Tp3LtacQgn0EK6viISO5PdqTYGH82Jeh2Olo0u7nUsYuztFMEddrVpPKSzYBqIhNsftquJAZyKKna0NPOqVEa4EDuT0L+b9eFGa1YT89g9H3TkaVmdRuJWKTlcF81/vRL7NwdgcD14LcCNLamBre5zEfOox4jdav7r3huWnewqzIqyfbw/TaI7oL+Gix6ZEyTqbQ0ACfS4RJBqt54o3oONAQAFdmqprMSmsNK5Rt8daBxvu6Y0EPNsMKwReom0YnqBoQhsBjgyeN7BrIqnFcWlTztntmJgPVmbM8BWSfRhVcCNPeHA3k5/my7dAFx3nYFOSNYUlm6B/zCVgmBR6dhyNrDwRnj5XZxWtba062YQQcza+8PnAlvV0Dyu3Wj007qSmoJO9xLuR9MhT1JYKE/f5+/e6pKM29ilApZvNheY22jztCre4ueT4dHp5gd+4UmuEoiB3eRGOcN9WF2anuvEMAwMsUctRcH6vv/Cw7y6WimwGgGmK/5p2lYO2KwN+MhVGlKV5sFZxXNNY2AdAa9OpXenxmj5sEU8X4ri885maS3MHKU+7D6yMqc1Wa12HlNpJjHRStOohuYr4TBkpf2HHVaT1+Jy7kw/P+xNcHA8gGZUauc0btGHcxWZZLkvZQAO7243RqwgJ9G4sFqbhMZVM8wPgctQey8Z/Qqci8ayPo0hpQm6KED7xoPPz/tE3KNl/t+qi00yX6G97u8UGAaAgUZL2J1SzMZrrD6R2Wuyucewmg10kI2nh153sdQOtHSBKqydEHUAJp2fLxorRfMwL0vrEirtvkliaSGOW9qIh/t350BLexPa3/rvziPVdwoknxRobNox19Xewv5hLqzJh6rPupPyMZDE0q1obRhS++CN9lN89OFYxCBhrtMsGO9zJ3Sj25eyYV6TD10+JVnL59kJVC8dsPYsOiSXam+fNCLR3jAwxaN0P7jpy9gwY3ODGW0wSQxY94slnQn+3pJpn1Ta3Q503/8TNzTHQyFN0qOxWprJ1Oi2ZT59FLM5WuEeKtS024LoEyMNLXdGDOtuMdQvGWP4rukKlA7JtlG2CHM4X2xetWVefp3cbr2wWd+ZZbF+sttdsWLAuUZDHOR+qVyii2e2dnu3qB/mZNvQbrXKZBVFCXeaA2OOt2TA4QOAfPDAHdZbL+d/HBc0ytaZ0ir3970B47xhHb+xS7mmSaah4h8h51/TqUXrkuwXMtuO1nfcNN9VugDdpcmSeSCobVbA5Za6aZ2V59PpXOxPWTn3FzyLl5spKUtWzA+GKE6dU+myRBrTCSvMXRqAymWP9wlDzmzPsl/GqnI0HgwCkwRS6jeMA/dOKJk1K5JdnFtKV3QJmmyHeWcYY48vMW7OROuQrhC5SA1AtqWz5ijXdkihFETJQHN2/bhl0HTgVyBN6qWESkgdwynheGoMaBZQ4uAke93mRYN2Rs4M5qENf2u/4SbNl5VTG+SW7rENCXrfuzyvbCKQW6N4P3AcXRdzMvwWoyTdaB5wJ2mSoKe1Yn9U2EGjfMzeLA3cL2L6CRuxR0MZhnSul+eMqnzQ/DytlXS7uVrMWJWhC0ZKnLXwVDKfYagWaWTzJf0LzJEX3PlmljIfeHBI0FKG4ZQktMnAYk6iTuqB0BF8RomMZwk4OMzxZcQ9bC4w8M2XA38scW5nLMuc2lyVsaxvp2evPBR3/ir40GSEjPGapOdupN2rMNdM74pHLeVBv2ihV8EZI+1ZwMD2EqCQpBu5dDOATaWBEydGRC/SYUduibh/omlfe7eXbpR5N7AblfgcKaLVY4PLwuSpqbQDA1+1fPfiuQeW0oID7VI26rzUtdjRodnp78+bTySsyCYjfUFKeZ5CPXc+P10amK41XI5ZcmhrpDH7JYDraFTX8XTtM4Ahmo7WHBjmAGsObH15jHZCf4Je9xm6JImNxPGXAwYO/GnEaSo53fy33Rd/LgMMFPjTxMsSgZBfkHvux1ISTj7/UxuoVALzMqvd3AFUBPxr9cCHWcDMUCBfAfl05m75kQHrOcDqX8BrBVZLAP/X9QCrBYB3bP6/OPCUDacjwb6QQvABwGp9wLAw8HPxp1YfB7yIw7UwMDVaZwN//PyR5jfCYsDw3j788bGQAKz+BbyMa7kkMJxrtCDThxnw9n5ZX/rb2cCZlJ+5wFsJ+L2TByMDY648xeCVsrw64RVxAkn+JX0GTU32ZXefuzjw8IIxkFCqzdrZ6pDqr9iu92Qdn8W/QaVLwZCWyutDMAy4mQ/vFg0A5BRaWB9AHe/0sBkfJGNJLh2fvigFBpQlfHwvMCq+qbUm9TUGs5aS7BX8/srXWBVsk4QWSFMe2PrZdGC9UJgWwgZKBYOFKOVkHdR8BZsnIqK0AA3pa4TqjxLwQnHpEKZVg6a3uchyIC3pOyknFQNvtJTg8YrjwN04+aHA5RAwZDNIa5YOxF8Y7boN+4/ZSyYCq6WBN0reOghdvuBA24Z08uTOIPDyRfIrBODOBHwosOYLweFPTcgQBhCB7T4AxaK/OAqspHIBc1YP4/VhDsxXbyfwdvv6xexp5HsSAb5Jb45Nm78eRRPnW1f6H+/OADhEwHy7Ogce4+1LlIrp4qFgq2DU8sAKOHA1I+Vhr6PJ9RCwinWwPQZOR2NUDrhzP/w/HAVW4qgxbycqmz1AD1zz4rkdME8hE/LKyJ4AQR2Q5mrozTRg4vktAWxkYBSAefYFqt79pwNzn9Yn6n8QMbzgJODuchTLIt7+mAWsOHA/4RaA+2GphrArlKKVOgfcliT2v60304CVUzg6TALcvb/ECUvyGAXuayzVJKuao2WBQwUtvZkATAISDFjNy7VEDibuZmZJxNh3RmEKkAfuYyk4BVh1WfYdcJdNO6fkx5Nhtd9ABI6yXzVd5oGzgFEegodUmm7LJDWAfpv3F7HpCs6kAzFkwzKK7Fc6A9iNW3pzFvBXzasozMuITwo4Sp7HQDaCSiZ5qHs7rIddEzwPGNWiwPt4e009MQdABFYSMCvRym9F/TUPzFNafGW1/5sBzBKmiZmWgIUTHcj+I7qXKQLWzI7/G8oPBoFrMgfzMcvjHGCMyh51G79FYOFgC534ywkwU2JkCpGXsGL+ilqgLhMdl2ioQudUmhchjab5IvBgh1Z5YG6kFwUO5SXCWJ9fUhC2lPrAYwo8PEjhKLD1z8jkXM8rROU3LtHifl2/yY1M3RuYT4xs/YffBxTN8hgwKTMQfJF5VXs6Mx0BY3Z7aSjXgFKkLgVWA3OJScCR3dD3s4B7M80ndv7okVz+ehKx/dZvJxaAhfkxjAAzm0VGkXm15EgnztQGEpZDyM7BOIYjACcxym6ROwusJeC5xfOekvKNWV+L6POdIDAlW2nB9XJFLcaBMTr1dXYZeV6+UU2sV5k4iBh72DoJ/HyPBTyq0txm9adVz6s01litbVz2KLWNYwsuXl5hSSgB5krdVogbBY5UzQPPLdnLarCKXSf1LWXefpYuSVgW+gAwJMVvg/M+u25+2GAalsJk4LhWWhKPTCInfNpPAjvoz4oYB/76woAXOAnC9PUqw26pgU4MA91XQ6QiQ8DxeVODRivUCEDFK0e+VOb43zMrtBQHHZUWyHXiRJ1rtmqYBe6e7BV6ENj+v0mrG8/vwm1dC36mAQx34kz3nQKsSA2ePLAarDG4wNEXdIY4FvWAge6r4noYAxK2vQGDimeBsbPm7MoWqNl7Msk5HXInhhHeKcCa1IYbNlpsFF4cOATy4oEpDepIo2+05ydntHyNwN4FlYGBL9zSfCe9X6Cia3PPfvEzwHmVPhWKkWKa1iFXcxgGDjk8WWD5pi90eo11p2E4eNY7T5F8tT1ZljWVA2ZpnWoYmKwqxZkSy5Td7gYmQlyHZCPoIu7JBO+rmPUgBwAUPcRiFLgblHRcl26ZGsXWnYbBYBJNIBprOAo8ScJUo2k+m17m7IuhgQn5IbSXBUZSY3DJUdj5HrYTg6zT6kzgTB9OXNVhYF2mb1zuSLXuZEMypOq4auUFgcnfVx9zpFpz37Zx6m+yyHFRYCWlMS94pNobXTUla/2scPTUPpwskw9n2DNgmm6nO5MfHARY8pDAE1s1TRbGYTqwlImno5KsOWBvJn9FSw7uI5c7JLAZmGqIZ9pkpRLmAONEYLKEo6J94bCojbbOVlHFG3c1737t+aPj7bXPkFDM/RoEJm8lKzjR314g1SEBfj5seTqJ+6M19z0mFUVjxUjlSnfkvpIXhR9JMXYSapvqZu0extvuYf8r0mk29E8FZivlI8DkxiheEkYq1dtmK+0moEzv5pWKi71HRaDH9yEJy+YETIzp8zME4hO3WLG0airJ/f394/1Ie3x8xFeIttBQxZq0MUullTEz58JDlJxD8qGlovm6ehzFsK14LHFS04oW12W5ynng+Dzp9wFDMnPhx0ponMSxKRsRI95NaFsVHSVqD6DIbID4gJ2GdN7Aa3iq7RSGO3xsTfn+cRJxcqsxcj4+nrgX8DeIgSfhlvt25DLFn5OEvI1rDYaR6VIi7sP8Os6emSBgxHs/Tu+eJgl5q+IDojBdSPlgneZ3mdyJceDycV/08QHTnlExivwKg4GPywHX0j4neJ0kXlKWuCE3j+U5IlZ8gLhMH4b+OIXoAIjtBPHycwR/tkIucVTEwp/XlyqAEJ0AQf2CMWP1KPjZ5m20J2+5f0vD/xdqesOCaR33dmQsisUb9HoEWUHkRlDn4xKtTs8GaH8eG4uKh4FYjsn3ZNwmZX8xX7j+AwrRsEo0Xu7Z3muKn7vM+ncx2JMRHzHZ6avpPsoP78IoVHV0XmVOvLuxvUqikLHtCXGA2k8hvl7CbkEqYC/hNuBTiqNqK97RqECj7qmQsWy9lC8+XpuYkfoiHTiYaGYkX7pNQnhG7+VR2cLcl/ydP0zxYJr2A5M7j3ZD0iW6sN6I69IhPMaRJ4m390IYcNncAD+9utvG7U5++gPaXeYCmtYoIb/qfTEpvtG8yDzyHoFm2nzqk1vJge1c8NlMUOikC6Mp764QeEonFsR7xcDOp8ydnncsxGH4HcAf0QXwbGA7vDRC/jlgrH4Wcmc9Hxg35eLI5dhnluJltj1Z9j12xZCXdTawdTgX530fcGPEf0hrEsfd8MzhbOByed5xAQ8BS7PhnHjfJWFcnHfCRw4CN2/ecx9kJKo1Coxl07C/sq71fy78mj6L7OXh3e21t46E/2I/wPsWWSGXmcu0c+IHssT/I/dRI8DYbfNH33035LHV7/AwKLt7AiO/sO2p5C1t4w/fCdwK+c82rtOJN0+UBy4pYQzMH1vHm9q1Mnr5hwE7Ibdd96EwY2HpPDC6MmHuUt2j0rWet7RKUFLzjeT+NC/tYEr7DbtnXFcow0fi+4GdG1IUE2LS48C4bZVGGJHKXlntLD2RcP/yspd4mQxtZV6yU4G9r3k/6iLgBOChIXjDH4rAkYqXd7STnwVc4Yg/1qhOAzzWHg/jKh2MdK9+yADj2xFLeAy4xDGNboAfmpdUIzBt6G6kxdPjIaNVRkYKU5crAbaabNcxaR8WgMdtVgPcshRjMH8bnyEfx6yBbKWx75l54MhKb8Q+PAm4Zfn7eHRjXMQTrIGTMbPSgoTvMsNSGcZhAXjcSE+V8KTUwwmupVfK1ISV04B7L2WGlV4ob2kM2IeFsXct4mGJvKpMhyH/pk0EfPd5wMWTeRwblnqzgy5I3LnH/ohZ55dg76V0jkjHjalKJ1aa+ecfC7wrDjjFsxx3LeNX98IrmWs5bKVz084lgSuc4ktjBFwyEy7NJXpQDBJfBfAh779gGeIRZJBHYsLDWgh72M/40PvewRIj+YD4Iz8Z+Oz4G35ImHtNwBcK016oD98c8DTH45aA/3Yta0tLqbQp7nOZm+LSofuNXnKZkKwUSq28Nw/FUi3njv+4E9b/XTXsUsN7MjnsuHsn7oH4MXdisESrpDQet9cUz8rwobs2UUqF0tXFoDL39e+2KHMo6+h/eEFeHH5CYjDZVI/CyYptXeF/f/r56QJuTEVFTmMmyTWkqsV52cEbkn8fbspLZXZPxQraU1/RNdqgWLK6JfnNEKxoAmqh4t6i+3RmOiZv0Q7jRMY5YIi3BUv3qOXdv+2KlbRjcfgl7Vrwu+SzaVwQp5z38iW59mCPbzwWq2mkuDqcSZyUSMRX6SSXGYXQP8RwnYpKQ5IqPo2YFwHBV7E8ZmVOplgTsTsxgO/YJudxhBImg8DfaPFLeuiDG4C/rIq3If4P0+0TBXbicyBOyrYArTSO/EyPMMxZ67caAx3aX1/8MRjAzlXq67ew6nXxCeTpi+g2xYb3tDre1lTTAus0n7ne0OFJkXJkUQXMGiTedgA+FitsptjzkvKK7n/lp61HO6AE0xZuCu7XyWt3krM+GLYjOgP8VUN8bhatSRXXg+kcrP2qBqSEmNms3sf2TLxahP9ai+5Vt6dxzbyuWoBKdyOGXsq28rNf6Hifqd95t2peqtVRAS0KFs5cYzdCnPGvnLfXarbNmW6yCjWSaN2/Otoe2+1TXj9vL+N0hhTRgXAPWH3qK9DnVKv5DC9Sa/ZQqOerroM3IaZOsaYi1eFQGhAKgl4NryPW0qmdoR5r3R8+pZVcOEBXV8NriSs9dOr3YKnAiNdcD29LHJ8vF6aBL7yusgTs5oNXxNsQfzF9uDo5xEXz0tLJJBlgW5m3p+Kq2lPRE0cFmeMofVw0rK051OjzlfE2c6cvxWGb2Kx+AG6akiudNLyHojDF9bVTcSCTJ2B1WUDrLp4Rj7/tcPR0jbzMWIMQqE92X1+jeRaMtYKB6J28dHjNvJb4oElVqsTflHhNccWtNV1svpgpu9XGAvbFl6vmpR05rpQWLSx5b/KpuPrmva7Bo+TCaQmNOp+KG2jHN1NtuxLZ0qKD978OZq3RyXd05H3IEhgoslPdQPcN7TmoNUjrwtc+Ggle1xfidqVl8utD8eWmeK2jyaICzM1snMlTcXPt6Nwu6GxXOLGkuhlrFRM7IbPzKax4b5PX1YCpNFt2slPfwhS32nZOyKHqKo5WQ7odId++eKOefNO9NxbyQb+8fGtcyZ0p/hlaK+Sq+iTx/j8Pj5vsaudh3wAAAABJRU5ErkJggg==" alt="" width="52" height="55">
+        <div><h2 id="quickTitle">Devis express</h2><p>Gratuit et sans engagement</p></div>
+      </div>
+      <form id="quickForm">
+        <div><label class="lbl" for="qService">Votre besoin</label>
+          <select id="qService">
+            <option>Gardiennage</option><option>Rondes de surveillance</option><option>Contrôle d'accès</option>
+            <option>Surveillance de chantier</option><option>Sécurité événementielle</option><option>Surveillance de magasin</option>
+          </select></div>
+        <div><label class="lbl" for="qVille">Ville du site</label><input id="qVille" placeholder="Montpellier"></div>
+        <button class="btn btn-navy" type="submit">Continuer ma demande
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="note">Il vous reste quelques détails à compléter</p>
+      </form>
+    </aside>
   </div>
+</section>
+
+<section class="trust" aria-label="Nos garanties"><div class="wrap">
+  <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.4 1.7-2 3-2s2.4.6 3 2M14 10h4M14 13h3"/></svg></span><div><b>Agents certifiés</b><span>Carte professionnelle CNAPS</span></div></div>
+  <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>24 h/24, 7 j/7</b><span>Nuits, week-ends, jours fériés</span></div></div>
+  <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M13 3 4 14h7l-1 7 9-11h-7z"/></svg></span><div><b>Devis sous 24 h</b><span>Mise en place rapide</span></div></div>
+  <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg></span><div><b>Rapports détaillés</b><span>Après chaque vacation</span></div></div>
 </div></section>
 
-<section class="band" id="services"><div class="wrap">
-  <div class="sec-head">
-    <p class="eyebrow">Nos prestations</p>
-    <h2>Une présence humaine, adaptée à votre site</h2>
-    <p class="lead">Chaque mission part d'une visite de votre site. Nous définissons ensemble les horaires, les consignes et le profil d'agent nécessaire.</p>
+<section class="sec alt" id="services"><div class="wrap">
+  <div class="sec-head center">
+    <span class="eyebrow">Nos prestations</span>
+    <h2 class="title">Des solutions de sécurité adaptées à chaque site</h2>
+    <p class="lead">Chaque mission commence par l'étude de votre site. Nous définissons avec vous les horaires, les consignes et le profil d'agent nécessaire.</p>
   </div>
   <div class="services">
     <article class="svc">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 20 5.5v6c0 5-3.4 8.9-8 10-4.6-1.1-8-5-8-10v-6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
       <h3>Gardiennage</h3>
-      <p>Agent de prévention et de sécurité en poste fixe, de jour comme de nuit, pour protéger vos biens et vos locaux.</p>
-      <ul><li>Postes permanents ou ponctuels</li><li>Week-ends et jours fériés</li></ul>
+      <p>Un agent de prévention et de sécurité en poste fixe pour protéger vos biens, vos locaux et vos collaborateurs.</p>
+      <ul><li>Postes permanents ou ponctuels</li><li>Jour, nuit, week-end</li></ul>
+      <a class="more" href="#devis" data-service="Gardiennage">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="svc">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s6-5.3 6-10.5a6 6 0 1 0-12 0C6 15.7 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.2"/><path d="M3 21h18"/></svg></span>
       <h3>Rondes de surveillance</h3>
-      <p>Passages réguliers sur votre site pour vérifier les accès, les clôtures et l'absence d'intrusion.</p>
-      <ul><li>Rondes de fermeture et d'ouverture</li><li>Compte rendu après chaque passage</li></ul>
+      <p>Des passages réguliers pour vérifier les accès, les clôtures et l'absence d'intrusion sur vos sites.</p>
+      <ul><li>Rondes d'ouverture et de fermeture</li><li>Compte rendu à chaque passage</li></ul>
+      <a class="more" href="#devis" data-service="Rondes de surveillance">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="svc">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.5"/></svg></span>
       <h3>Contrôle d'accès</h3>
       <p>Accueil, filtrage et vérification des entrées dans vos bâtiments, résidences et établissements recevant du public.</p>
-      <ul><li>Tenue du registre des visiteurs</li><li>Gestion des badges et des clés</li></ul>
+      <ul><li>Registre des visiteurs</li><li>Gestion des badges et des clés</li></ul>
+      <a class="more" href="#devis" data-service="Contrôle d'accès">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="svc">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/></svg>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V11l4-3v13M9 21V8l6-4v17M15 21V9h4v12"/></svg></span>
       <h3>Surveillance de chantier</h3>
-      <p>Protection des engins, des matériaux et des installations contre le vol et les dégradations, hors heures d'ouverture.</p>
-      <ul><li>Nuits, week-ends, congés</li><li>Contrôle des livraisons</li></ul>
+      <p>Protection des engins, matériaux et installations contre le vol et les dégradations hors des heures d'activité.</p>
+      <ul><li>Nuits, week-ends et congés</li><li>Contrôle des livraisons</li></ul>
+      <a class="more" href="#devis" data-service="Surveillance de chantier">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="svc">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l4-12 4 6 4-9 4 15"/></svg>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 20c.8-3.4 3-5 5.5-5s4.7 1.6 5.5 5M13.5 15.5c1-.9 2-1.3 3-1.3 2.2 0 4 1.5 4.8 4.8"/></svg></span>
       <h3>Sécurité événementielle</h3>
-      <p>Agents pour vos salons, concerts, soirées d'entreprise et manifestations publiques ou privées.</p>
+      <p>Des équipes pour vos salons, concerts, soirées d'entreprise et manifestations publiques ou privées.</p>
       <ul><li>Filtrage et palpation des entrées</li><li>Gestion des flux de public</li></ul>
+      <a class="more" href="#devis" data-service="Sécurité événementielle">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
     <article class="svc">
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 9 5.5 4h13L20 9M4 9h16v11H4zM4 9c0 1.7 1.3 3 3 3s3-1.3 3-3c0 1.7 1.3 3 2 3s3-1.3 3-3c0 1.7 1.3 3 3 3s2-1.3 2-3"/><path d="M10 20v-4h4v4"/></svg></span>
       <h3>Surveillance de magasin</h3>
-      <p>Prévention des vols et présence dissuasive en surface de vente, pour commerces et grandes surfaces.</p>
+      <p>Prévention des vols et présence dissuasive en surface de vente, pour les commerces et les grandes surfaces.</p>
       <ul><li>Agent en tenue ou en civil</li><li>Ouverture et fermeture du magasin</li></ul>
+      <a class="more" href="#devis" data-service="Surveillance de magasin">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </article>
   </div>
 </div></section>
 
-<section class="band alt" id="secteurs"><div class="wrap">
+<section class="urgent" aria-label="Besoin urgent"><div class="wrap">
+  <div class="shield"><img src="data:image/png;base64,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" alt="" width="64" height="68"></div>
+  <div class="txt">
+    <h2>Besoin d'un agent rapidement ?</h2>
+    <p>Appelez-nous : nous étudions votre demande et organisons la mise en place au plus vite.</p>
+  </div>
+  <a class="btn btn-navy" href="tel:+33400000000">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>04 00 00 00 00</a>
+</div></section>
+
+<section class="sec" id="secteurs"><div class="wrap">
   <div class="sec-head">
-    <p class="eyebrow">Qui nous protégeons</p>
-    <h2>Entreprises, collectivités et particuliers</h2>
+    <span class="eyebrow">Secteurs d'intervention</span>
+    <h2 class="title">Entreprises, collectivités et particuliers</h2>
     <p class="lead">Nos agents interviennent pour des structures privées comme publiques, à Montpellier et dans toute l'Hérault.</p>
   </div>
   <div class="sectors">
-    <div class="sector">Bureaux et entreprises <span>poste fixe</span></div>
-    <div class="sector">Commerces <span>prévention vol</span></div>
-    <div class="sector">Chantiers BTP <span>nuit · week-end</span></div>
-    <div class="sector">Entrepôts et logistique <span>rondes</span></div>
-    <div class="sector">Résidences et copropriétés <span>contrôle d'accès</span></div>
-    <div class="sector">Collectivités <span>bâtiments publics</span></div>
-    <div class="sector">Événements <span>filtrage</span></div>
-    <div class="sector">Établissements recevant du public <span>accueil</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/></svg><b>Bureaux et entreprises</b><span>Accueil, poste fixe, rondes</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 9 5.5 4h13L20 9v11H4z"/><path d="M10 20v-5h4v5"/></svg><b>Commerces</b><span>Prévention des vols</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 20V9l6-4 6 4v11"/><path d="M9 13h6"/></svg><b>Chantiers BTP</b><span>Nuits, week-ends, congés</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 5l9 5v10H3z"/><path d="M7 20v-6h10v6M7 17h10"/></svg><b>Entrepôts et logistique</b><span>Rondes et contrôle des quais</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg><b>Résidences</b><span>Copropriétés, contrôle d'accès</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 10h16M12 3l9 5H3zM6 10v8M10 10v8M14 10v8M18 10v8"/></svg><b>Collectivités</b><span>Bâtiments et sites publics</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18v4a2 2 0 0 0 0 4v4H3v-4a2 2 0 0 0 0-4z"/><path d="M14 8v12" stroke-dasharray="2 2"/></svg><b>Événements</b><span>Filtrage et gestion des flux</span></div>
+    <div class="sector"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7h14v14M9 21v-4h6v4M9 11h1M14 11h1"/><path d="M8 7V4h8v3"/></svg><b>Établissements recevant du public</b><span>Accueil et sécurité</span></div>
   </div>
 </div></section>
 
-<section class="band" id="methode"><div class="wrap">
-  <div class="sec-head">
-    <p class="eyebrow">Comment ça se passe</p>
-    <h2>De la demande à la prise de poste</h2>
-    <p class="lead">Une démarche simple, avec un interlocuteur unique du premier appel jusqu'au suivi de la mission.</p>
-  </div>
-  <ol class="steps">
-    <li><h3>Analyse</h3><p>Nous visitons votre site et identifions les risques : accès, horaires, points sensibles.</p></li>
-    <li><h3>Proposition</h3><p>Vous recevez un devis détaillé : nombre d'agents, plages horaires, consignes et tarif.</p></li>
-    <li><h3>Mise en place</h3><p>Nous rédigeons les consignes de poste avec vous et présentons l'agent affecté au site.</p></li>
-    <li><h3>Suivi</h3><p>Main courante, rapports d'incident et point régulier avec votre référent.</p></li>
-  </ol>
-
-  <div style="margin-top:72px" class="commit">
-    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Agents qualifiés et déclarés</strong>Chaque agent détient une carte professionnelle délivrée par le CNAPS, vérifiable sur demande.</p></div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Réactivité</strong>Réponse à votre demande sous 24 h et remplacement rapide d'un agent absent.</p></div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Transparence</strong>Comptes rendus écrits après chaque vacation, consultables par votre référent.</p></div>
-    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><p><strong>Proximité</strong>Une entreprise montpelliéraine qui connaît le territoire et ses contraintes.</p></div>
-  </div>
-</div></section>
-
-<section class="band alt" id="devis"><div class="wrap">
-  <div class="quote">
-    <div>
-      <p class="eyebrow">Devis gratuit</p>
-      <h2 style="margin-top:12px">Parlez-nous de votre site</h2>
-      <p class="lead" style="margin-top:16px">Décrivez votre besoin en quelques lignes. Nous revenons vers vous sous 24 h avec une proposition adaptée.</p>
-      <div class="contact-list">
-        <div><span class="k">Téléphone</span><span class="v">04 00 00 00 00 <span class="todo">à compléter</span></span></div>
-        <div><span class="k">E-mail</span><span class="v">contact@2msecurite.fr <span class="todo">à compléter</span></span></div>
-        <div><span class="k">Siège</span><span class="v">Montpellier (34080)</span></div>
-        <div><span class="k">Zone d'intervention</span><span class="v">Montpellier, Hérault et Occitanie</span></div>
-      </div>
+<section class="sec alt" id="methode"><div class="wrap why">
+  <div>
+    <span class="eyebrow">Pourquoi 2M Sécurité</span>
+    <h2 class="title" style="margin-top:14px">Une agence à taille humaine, réactive et rigoureuse</h2>
+    <div class="why-list">
+      <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.5 20 5.5v6c0 5-3.4 8.9-8 10-4.6-1.1-8-5-8-10v-6z"/></svg></span><div><b>Agents qualifiés et déclarés</b><p>Chaque agent détient une carte professionnelle délivrée par le CNAPS, que vous pouvez consulter avant la mission.</p></div></div>
+      <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 3 4 14h7l-1 7 9-11h-7z"/></svg></span><div><b>Réactivité</b><p>Réponse à chaque demande sous 24 h et remplacement rapide en cas d'absence d'un agent.</p></div></div>
+      <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.2-3.8 4.2-6 8-6s6.8 2.2 8 6"/></svg></span><div><b>Un interlocuteur unique</b><p>Le même référent suit votre dossier, du premier échange au suivi quotidien de la mission.</p></div></div>
+      <div class="why-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Proximité</b><p>Une entreprise montpelliéraine qui connaît le territoire et ses contraintes.</p></div></div>
     </div>
-
-    <form class="devis" id="devisForm" novalidate>
-      <div class="field"><label for="nom">Nom et prénom</label><input id="nom" name="nom" required autocomplete="name"></div>
-      <div class="field"><label for="societe">Société / structure</label><input id="societe" name="societe" autocomplete="organization"></div>
-      <div class="field"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" required autocomplete="tel"></div>
-      <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
-      <div class="field"><label for="type">Type de site</label>
-        <select id="type" name="type">
-          <option>Bureaux / entreprise</option><option>Commerce</option><option>Chantier</option><option>Entrepôt</option>
-          <option>Résidence / copropriété</option><option>Événement</option><option>Collectivité</option><option>Autre</option>
-        </select></div>
-      <div class="field"><label for="ville">Ville du site</label><input id="ville" name="ville" placeholder="Montpellier"></div>
-      <div class="field full"><label>Prestations souhaitées</label>
-        <div class="chips">
-          <label><input type="checkbox" name="presta" value="Gardiennage" id="p1" checked> Gardiennage</label>
-          <label><input type="checkbox" name="presta" value="Rondes" id="p2"> Rondes</label>
-          <label><input type="checkbox" name="presta" value="Contrôle d'accès" id="p3"> Contrôle d'accès</label>
-          <label><input type="checkbox" name="presta" value="Événementiel" id="p4"> Événementiel</label>
-        </div></div>
-      <div class="field"><label for="debut">Date de début</label><input id="debut" name="debut" type="date"></div>
-      <div class="field"><label for="horaires">Horaires</label>
-        <select id="horaires" name="horaires"><option>Nuit</option><option>Jour</option><option>24 h/24</option><option>Week-end</option><option>Ponctuel</option></select></div>
-      <div class="field full"><label for="message">Votre besoin</label><textarea id="message" name="message" placeholder="Ex. : surveillance d'un chantier de 3 000 m² les nuits et week-ends pendant 4 mois."></textarea></div>
-      <p class="form-note">Les informations saisies servent uniquement à établir votre devis.</p>
-      <div class="field full"><button class="btn btn-signal" type="submit">Préparer ma demande de devis</button></div>
-      <div class="result" id="result" hidden>
-        <strong>Votre demande est prête.</strong>
-        <span style="color:var(--muted);font-size:.9rem">Copiez-la et envoyez-la à l'adresse e-mail ci-contre, ou appelez-nous en la gardant sous les yeux.</span>
-        <pre id="resultText"></pre>
-        <button class="btn btn-ghost" type="button" id="copyBtn">Copier la demande</button>
-      </div>
-    </form>
+  </div>
+  <div class="process">
+    <h3>De votre demande à la prise de poste</h3>
+    <p>Une démarche claire, en quatre étapes.</p>
+    <ol class="steps">
+      <li><div><b>Analyse de votre site</b><p>Nous visitons les lieux et identifions les risques : accès, horaires, points sensibles.</p></div></li>
+      <li><div><b>Proposition sur mesure</b><p>Vous recevez un devis détaillé : nombre d'agents, plages horaires, consignes et tarif.</p></div></li>
+      <li><div><b>Mise en place</b><p>Nous rédigeons les consignes de poste avec vous et présentons l'agent affecté au site.</p></div></li>
+      <li><div><b>Suivi et reporting</b><p>Main courante, rapports d'incident et point régulier avec votre référent.</p></div></li>
+    </ol>
   </div>
 </div></section>
 
-<section class="band" id="faq"><div class="wrap">
-  <div class="sec-head">
-    <p class="eyebrow">Questions fréquentes</p>
-    <h2>Avant de nous confier votre site</h2>
+<section class="sec" id="devis"><div class="wrap quote">
+  <div>
+    <span class="eyebrow">Devis gratuit</span>
+    <h2 class="title" style="margin-top:14px">Parlez-nous de votre projet de sécurité</h2>
+    <p class="lead" style="margin-top:16px">Décrivez votre besoin en quelques lignes. Nous revenons vers vous sous 24 h avec une proposition adaptée.</p>
+    <div class="contact-cards">
+      <div class="ccard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><small>Téléphone</small><b>04 00 00 00 00</b><span class="todo">à compléter</span></div></div>
+      <div class="ccard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg></span><div><small>E-mail</small><b>contact@2msecurite.fr</b><span class="todo">à compléter</span></div></div>
+      <div class="ccard"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>Zone d'intervention</small><b>Montpellier, Hérault et Occitanie</b></div></div>
+    </div>
+  </div>
+
+  <form class="devis" id="devisForm" novalidate>
+    <div class="full"><span class="lbl">Prestations souhaitées</span>
+      <div class="chips" id="chips">
+        <label class="chip"><input type="checkbox" name="presta" value="Gardiennage" id="c1"><span>Gardiennage</span></label>
+        <label class="chip"><input type="checkbox" name="presta" value="Rondes de surveillance" id="c2"><span>Rondes</span></label>
+        <label class="chip"><input type="checkbox" name="presta" value="Contrôle d'accès" id="c3"><span>Contrôle d'accès</span></label>
+        <label class="chip"><input type="checkbox" name="presta" value="Surveillance de chantier" id="c4"><span>Chantier</span></label>
+        <label class="chip"><input type="checkbox" name="presta" value="Sécurité événementielle" id="c5"><span>Événementiel</span></label>
+        <label class="chip"><input type="checkbox" name="presta" value="Surveillance de magasin" id="c6"><span>Magasin</span></label>
+      </div></div>
+    <div><label class="lbl" for="nom">Nom et prénom *</label><input id="nom" name="nom" autocomplete="name" placeholder="Marie Dupont"></div>
+    <div><label class="lbl" for="societe">Société ou structure</label><input id="societe" name="societe" autocomplete="organization" placeholder="SARL Exemple"></div>
+    <div><label class="lbl" for="tel">Téléphone *</label><input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="06 12 34 56 78"></div>
+    <div><label class="lbl" for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="marie@exemple.fr"></div>
+    <div><label class="lbl" for="ville">Ville du site</label><input id="ville" name="ville" placeholder="Montpellier"></div>
+    <div><label class="lbl" for="horaires">Horaires</label>
+      <select id="horaires" name="horaires"><option>Nuit</option><option>Jour</option><option>24 h/24</option><option>Week-end</option><option>Ponctuel</option></select></div>
+    <div class="full"><label class="lbl" for="message">Votre besoin</label><textarea id="message" name="message" placeholder="Surveillance d'un chantier de 3 000 m² les nuits et week-ends pendant 4 mois."></textarea></div>
+    <div class="full form-foot">
+      <p>Vos informations servent uniquement à établir votre devis. * Champs obligatoires</p>
+      <button class="btn btn-primary" type="submit">Envoyer ma demande
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="full err-msg" id="errMsg" hidden>Renseignez votre nom, votre téléphone et un e-mail valide pour continuer.</p>
+    <div class="full result" id="result" hidden>
+      <b>Votre demande est prête</b>
+      <span style="color:var(--muted)">Copiez-la et envoyez-la par e-mail à contact@2msecurite.fr, ou appelez-nous en la gardant sous les yeux.</span>
+      <pre id="resultText"></pre>
+      <div class="row"><button class="btn btn-navy" type="button" id="copyBtn">Copier la demande</button></div>
+    </div>
+  </form>
+</div></section>
+
+<section class="sec alt" id="faq"><div class="wrap faq-grid">
+  <div class="sec-head" style="margin-bottom:0">
+    <span class="eyebrow">Questions fréquentes</span>
+    <h2 class="title">Avant de nous confier votre site</h2>
+    <p class="lead">Vous ne trouvez pas votre réponse ? Appelez-nous au 04 00 00 00 00.</p>
   </div>
   <div class="faq">
-    <details><summary>Vos agents sont-ils habilités ?</summary><p>Oui. Tous nos agents de prévention et de sécurité détiennent une carte professionnelle délivrée par le CNAPS (Conseil national des activités privées de sécurité). Vous pouvez demander à la consulter avant le début de la mission.</p></details>
-    <details><summary>Dans quel délai pouvez-vous intervenir ?</summary><p>Nous répondons à chaque demande sous 24 h. Pour une mission urgente, appelez-nous directement : la mise en place peut être rapide selon la disponibilité des agents et la nature du site.</p></details>
-    <details><summary>Comment est calculé le tarif ?</summary><p>Le prix dépend du nombre d'heures, des plages horaires (nuit, dimanche, jours fériés), du nombre d'agents et des qualifications demandées. Le devis détaille chacun de ces éléments.</p></details>
-    <details><summary>Intervenez-vous en dehors de Montpellier ?</summary><p>Oui, dans tout le département de l'Hérault et en Occitanie. Pour les sites plus éloignés, contactez-nous pour étudier la faisabilité.</p></details>
-    <details><summary>Que contient le compte rendu ?</summary><p>L'agent tient une main courante pendant sa vacation : heures de prise et de fin de poste, rondes effectuées, anomalies constatées et actions menées. Un rapport d'incident est rédigé dès qu'un événement le justifie.</p></details>
+    <details open><summary>Vos agents sont-ils habilités ?<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></summary><p>Oui. Tous nos agents de prévention et de sécurité détiennent une carte professionnelle délivrée par le CNAPS (Conseil national des activités privées de sécurité). Vous pouvez demander à la consulter avant le début de la mission.</p></details>
+    <details><summary>Dans quel délai pouvez-vous intervenir ?<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></summary><p>Nous répondons à chaque demande sous 24 h. Pour une mission urgente, appelez-nous directement : la mise en place peut être rapide selon la disponibilité des agents et la nature du site.</p></details>
+    <details><summary>Comment est calculé le tarif ?<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></summary><p>Le prix dépend du nombre d'heures, des plages horaires (nuit, dimanche, jours fériés), du nombre d'agents et des qualifications demandées. Le devis détaille chacun de ces éléments.</p></details>
+    <details><summary>Intervenez-vous en dehors de Montpellier ?<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></summary><p>Oui, dans tout le département de l'Hérault et en Occitanie. Pour un site plus éloigné, contactez-nous pour étudier la faisabilité.</p></details>
+    <details><summary>Que contient le compte rendu de mission ?<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></summary><p>L'agent tient une main courante pendant sa vacation : heures de prise et de fin de poste, rondes effectuées, anomalies constatées et actions menées. Un rapport d'incident est rédigé dès qu'un événement le justifie.</p></details>
   </div>
 </div></section>
 </main>
 
 <footer class="site"><div class="wrap">
-  <div class="cols">
-    <div>
-      <span class="logo-txt" style="font-size:1.8rem">2M Sécurité</span>
-      <p style="margin-top:12px;opacity:.85;max-width:40ch">Gardiennage, surveillance et sécurité des biens et des personnes à Montpellier et dans l'Hérault.</p>
+  <div class="fcols">
+    <div class="fbrand">
+      <img src="data:image/png;base64,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" alt="Logo 2M Sécurité" width="84" height="90">
+      <p>Gardiennage, surveillance et sécurité des biens et des personnes à Montpellier et dans l'Hérault.</p>
     </div>
     <div><h4>Prestations</h4><ul>
       <li><a href="#services">Gardiennage</a></li><li><a href="#services">Rondes de surveillance</a></li>
       <li><a href="#services">Contrôle d'accès</a></li><li><a href="#services">Sécurité événementielle</a></li></ul></div>
+    <div><h4>L'entreprise</h4><ul>
+      <li><a href="#methode">Notre méthode</a></li><li><a href="#secteurs">Secteurs</a></li><li><a href="#faq">FAQ</a></li><li><a href="#devis">Devis gratuit</a></li></ul></div>
     <div><h4>Contact</h4><ul>
-      <li>04 00 00 00 00</li><li>contact@2msecurite.fr</li><li>Montpellier (34080)</li>
-      <li><a href="#devis">Demander un devis</a></li></ul></div>
+      <li>04 00 00 00 00</li><li>contact@2msecurite.fr</li><li>Montpellier (34080)</li></ul></div>
   </div>
   <div class="legal">
     <span>2M SÉCURITÉ · SAS au capital de 100 € · RCS Montpellier 983 892 621 · SIRET 983 892 621 00019 · TVA FR79983892621 · NAF 80.10Z</span>
-    <span class="cnaps">Autorisation d'exercice CNAPS n° AUT-034-XXXX-XX-XX-XXXXXXXXXXX (à compléter)</span>
-    <span>« L'autorisation d'exercice délivrée par le CNAPS ne confère aucune prérogative de puissance publique à l'entreprise ou aux personnes qui en bénéficient. » (article L.612-14 du Code de la sécurité intérieure)</span>
+    <span>Autorisation d'exercice CNAPS n° AUT-034-XXXX-XX-XX-XXXXXXXXXXX (à compléter)</span>
+    <span>« L'autorisation d'exercice délivrée par le CNAPS ne confère aucune prérogative de puissance publique à l'entreprise ou aux personnes qui en bénéficient. » Article L.612-14 du Code de la sécurité intérieure.</span>
     <span>© 2026 2M Sécurité · Mentions légales · Politique de confidentialité</span>
   </div>
 </div></footer>
 
+<div class="mbar">
+  <a class="btn btn-navy" href="tel:+33400000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Appeler</a>
+  <a class="btn btn-primary" href="#devis">Devis gratuit</a>
+</div>
+
 <script>
 (function(){
-  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
-  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
-  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
+  var burger=document.getElementById('burger'),nav=document.getElementById('nav');
+  burger.addEventListener('click',function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');burger.setAttribute('aria-expanded','false')})});
 
-  var form=document.getElementById('devisForm'),res=document.getElementById('result'),out=document.getElementById('resultText');
+  function pick(service){
+    document.querySelectorAll('#chips input').forEach(function(c){if(c.value===service)c.checked=true});
+  }
+  document.querySelectorAll('[data-service]').forEach(function(a){a.addEventListener('click',function(){pick(a.dataset.service)})});
+
+  document.getElementById('quickForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    pick(document.getElementById('qService').value);
+    var v=document.getElementById('qVille').value.trim();if(v)document.getElementById('ville').value=v;
+    document.getElementById('devis').scrollIntoView({behavior:'smooth'});
+    setTimeout(function(){document.getElementById('nom').focus({preventScroll:true})},500);
+  });
+
+  var form=document.getElementById('devisForm'),res=document.getElementById('result'),out=document.getElementById('resultText'),err=document.getElementById('errMsg');
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var req=['nom','tel','email'],ok=true;
-    req.forEach(function(id){var el=document.getElementById(id);if(!el.value.trim()){el.style.borderColor='var(--signal)';ok=false}else{el.style.borderColor=''}});
-    if(!ok){document.getElementById(req.find(function(id){return!document.getElementById(id).value.trim()})).focus();return}
+    var bad=[];
+    ['nom','tel'].forEach(function(id){var el=document.getElementById(id);var ko=!el.value.trim();el.classList.toggle('err',ko);if(ko)bad.push(el)});
+    var em=document.getElementById('email');var ko=!/^\S+@\S+\.\S+$/.test(em.value.trim());em.classList.toggle('err',ko);if(ko)bad.push(em);
+    err.hidden=!bad.length;
+    if(bad.length){bad[0].focus();return}
     var f=new FormData(form),p=f.getAll('presta').join(', ')||'À préciser';
-    out.textContent='Demande de devis – 2M Sécurité\n\nNom : '+f.get('nom')+'\nSociété : '+(f.get('societe')||'-')+'\nTéléphone : '+f.get('tel')+'\nE-mail : '+f.get('email')+'\nType de site : '+f.get('type')+'\nVille : '+(f.get('ville')||'-')+'\nPrestations : '+p+'\nDébut : '+(f.get('debut')||'À définir')+'\nHoraires : '+f.get('horaires')+'\n\nBesoin :\n'+(f.get('message')||'-');
+    out.textContent='Demande de devis – 2M Sécurité\n\nNom : '+f.get('nom')+'\nSociété : '+(f.get('societe')||'-')+'\nTéléphone : '+f.get('tel')+'\nE-mail : '+f.get('email')+'\nVille du site : '+(f.get('ville')||'-')+'\nPrestations : '+p+'\nHoraires : '+f.get('horaires')+'\n\nBesoin :\n'+(f.get('message')||'-');
     res.hidden=false;res.scrollIntoView({behavior:'smooth',block:'nearest'});
   });
+  form.querySelectorAll('input').forEach(function(i){i.addEventListener('input',function(){i.classList.remove('err')})});
   document.getElementById('copyBtn').addEventListener('click',function(){
     var b=this;
-    function sel(){var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Texte sélectionné'}
-    try{navigator.clipboard.writeText(out.textContent).then(function(){b.textContent='Demande copiée'},sel)}catch(err){sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Texte sélectionné, copiez-le'}
+    try{navigator.clipboard.writeText(out.textContent).then(function(){b.textContent='Demande copiée'},sel)}catch(x){sel()}
   });
 })();
 </script>
+
 </body>
 </html>
